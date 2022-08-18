@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyleft neGames. Licenced under GPL-3.
 
 #pragma once
 
@@ -6,24 +6,22 @@
 #include "GameFramework/Pawn.h"
 #include "BallPawn.generated.h"
 
+
+
+
 UCLASS()
 class BALLGAME_API ABallPawn : public APawn
 {
 	GENERATED_BODY()
 
-public:
-	// Sets default values for this pawn's properties
-	ABallPawn();
+	public:
+		ABallPawn();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	protected:
+		virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	public:
+		virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+		virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };
